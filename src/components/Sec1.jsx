@@ -9,8 +9,10 @@ function Sec1() {
             <div className="col-md-12 text-right">
                 <div className="row">
                   <div className="col-lg-8 col-md-12 col-sm-12">
-                      <span className="display-6 text-warning" data-animation="fadeInLeft" data-delay=".1s"> { content.hero.subTitle} </span>
-                  <h1 className="display-1 text-light" data-animation="fadeInLeft" data-delay=".5s"> { content.hero.mainTitle }
+                      <span className="display-6 text-info" data-animation="fadeInLeft" data-delay=".1s"> 
+                      { content.hero.subTitle} </span>
+                  <h1 className="display-1 text-light" data-animation="fadeInLeft" data-delay=".5s"> 
+                    { content.hero['mainTitle-1'] } <span className="text-warning"> { content.hero['mainTitle-2']} </span>
                    </h1>
 
                     {/* <div className="btn btn-outline-warning btn-lg">

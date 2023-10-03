@@ -1,5 +1,14 @@
 .bg-custom {
-  background-color: #4f30a7;
+  background-color: #2a2c7f;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 500 !important;
 }
 
 /* head line section */
@@ -32,18 +41,37 @@
 }
 
 #action {
-  height: 300px;
+  height: 60vh;
   background: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309367/be-practical/ds-web/ipa84h3ozcjgsxukojg4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 30px;
+  text-align: center;
 }
 
 #action #action-content {
   letter-spacing: 4px;
-  animation-name: lePeek;
-  animation-iteration-count: infinite;
-  animation-delay: 4s;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #6a5acd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.circle strong {
+  font-size: 3em;
+}
+
+.circle div sup {
+  font-size: 1.2em;
 }
 
 /* schedule */
@@ -56,26 +84,20 @@
   padding: 30px;
 }
 
-#schedule .accordion-item {
-  background-color: transparent;
+#schedule .card {
+  height: 100%;
 }
 
-#schedule .accordion-button {
-  cursor: pointer;
-  background-color: transparent;
-}
-
-#schedule .accordion-button h6 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+#schedule .card img.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* register form section */
 
-#register,
-#footer {
-  background-image: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309349/be-practical/ds-web/vph8fiuf3jrd4y5fpjfz.png");
+#register {
+  background-image: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309367/be-practical/ds-web/ipa84h3ozcjgsxukojg4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -83,19 +105,8 @@
 }
 
 /*  register */
-#register .card .card-header,
-#register .card .card-body {
-  background: transparent;
-}
 #register form input {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #6a5acd;
-}
-
-#register form input:focus {
-  outline: none;
-  border: none;
+  padding: 14px;
 }
 
 /* faq section */
@@ -109,29 +120,11 @@
   background-color: transparent;
 }
 
-@-webkit-keyframes bg-pan-left {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes bg-pan-left {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* wave animation */
-@keyframes lePeek {
-  25% {
-    transform: rotateX(30deg) translateY(10px) rotate(-13deg);
-  }
-  50% {
-    transform: translateY(-22px) rotate(3deg) scale(1.1);
-  }
+#footer {
+  height: 100%;
+  background: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309367/be-practical/ds-web/ipa84h3ozcjgsxukojg4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
 }
