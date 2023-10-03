@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.bg-custom {
+  background-color: #5f4cdc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* head line section */
+
+#headline {
+  background-color: transparent;
+  background: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309367/be-practical/ds-web/czrvvfnduo37f82hkkvt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-color: #6a5acd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* about section */
+#about {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+#about #abt-img {
+  position: relative;
+}
+
+#about .abt2 {
+  position: absolute;
+  left: -100px;
+  bottom: -50px;
+}
+
+#action {
+  height: 300px;
+  background: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309367/be-practical/ds-web/ipa84h3ozcjgsxukojg4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#action #action-content {
+  letter-spacing: 4px;
+  animation-name: lePeek;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+/* schedule */
+#schedule,
+#faq {
+  background-image: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309348/be-practical/ds-web/ojxyb8hp2sneqk4tfjeh.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+}
+
+#schedule .accordion-item {
+  background-color: transparent;
+}
+
+#schedule .accordion-button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#schedule .accordion-button h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* register form section */
+
+#register,
+#footer {
+  background-image: url("https://res.cloudinary.com/dfshihuf9/image/upload/v1696309349/be-practical/ds-web/vph8fiuf3jrd4y5fpjfz.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+}
+
+/*  register */
+#register .card .card-header,
+#register .card .card-body {
+  background: transparent;
+}
+#register form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #6a5acd;
+}
+
+#register form input:focus {
+  outline: none;
+  border: none;
+}
+
+/* faq section */
+
+#faq .accordion-item {
+  background-color: transparent;
+}
+
+#faq .accordion-button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* wave animation */
+@keyframes lePeek {
+  25% {
+    transform: rotateX(30deg) translateY(10px) rotate(-13deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-22px) rotate(3deg) scale(1.1);
   }
 }
