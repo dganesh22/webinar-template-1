@@ -14,7 +14,7 @@ function Header() {
                     <div className="collapse navbar-collapse d-flex justify-content-end" id="menu">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to={content.pay.url} target="_blank" className="btn btn-outline-primary">
+                                <Link to={content.pay.url} target="_blank" className="btn btn-outline-warning">
                                     Book Now
                                 </Link>
                             </li>

@@ -13,9 +13,9 @@ function Sec1() {
                   <h1 className="display-1 text-light" data-animation="fadeInLeft" data-delay=".5s"> { content.hero.mainTitle }
                    </h1>
 
-                    <div className="btn btn-outline-warning btn-lg">
+                    {/* <div className="btn btn-outline-warning btn-lg">
                        <span className="text-light">Play</span> <i className="bi bi-play-circle"></i>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
             </div>
