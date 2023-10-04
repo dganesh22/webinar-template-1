@@ -9,12 +9,14 @@ import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Contact from './components/Contact'
+import { ToastContainer } from 'react-toastify'
 
 
 function App() {
   return (
     <BrowserRouter>
         <Header/>
+        <ToastContainer autoClose={4000} position='top-right' />
         <Sec1/>
         <About/>
         <Sec3/>
