@@ -36,8 +36,8 @@
 
 #about .abt2 {
   position: absolute;
-  left: -100px;
-  bottom: -50px;
+  left: -50px;
+  top: -50px;
 }
 
 #action {
@@ -55,8 +55,8 @@
 }
 
 .circle {
-  height: 100px;
-  width: 100px;
+  height: 5rem;
+  width: 5rem;
   background-color: #6a5acd;
   display: flex;
   align-items: center;
@@ -127,4 +127,28 @@
   background-position: center center;
   background-size: cover;
   padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #about #abt-img {
+    position: relative;
+    width: 100%;
+  }
+
+  #about .abt2 {
+    display: none;
+  }
+
+  .circle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .circle strong {
+    font-size: 1.1em;
+  }
+
+  .circle div sup {
+    font-size: 0.8em;
+  }
 }

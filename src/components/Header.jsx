@@ -8,7 +8,7 @@ function Header() {
             <nav className="navbar navbar-expand-md navbar-dark bg-custom fixed-top">
                 <div className="container">
                     <Link to={`/#`} className="navbar-brand">
-                         <img src="https://www.be-practical.com/images/Be-logo.png" alt="" className='img-fluid' width={200} height={150} />
+                         <img src={content.header.logo} alt="" className='img-fluid' width={200} height={150} />
                     </Link>
                 </div>
             </nav>

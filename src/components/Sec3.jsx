@@ -47,7 +47,7 @@ function Sec3() {
                 <div className="display-6 text-center text-light d-grid gap-2 col-md-8 col-sm-12 mx-auto"  id='action-content'>
                       <Link to={content.pay.url} target='_blank' className="btn btn-success">
                           <h3>
-                          { content.action.txt }  <span> &#8377; { content.action.discount } </span> <s className="text-danger"> &#8377;{ content.action.amount } </s> &nbsp;
+                          { content.action.txt } <s className="text-danger"> &#8377;{ content.action.amount } </s> &nbsp; <span> &#8377; { content.action.discount } </span>
                           </h3>
                       </Link>
                 </div>
@@ -61,19 +61,19 @@ function Sec3() {
                             Offer ends in
                           </h5>
                           <div id="demo" className="d-flex">
-                              <div class="circle">
+                              <div className="circle">
                                   <strong className="days"></strong>
                                   <sup>Days</sup>
                               </div>
-                              <div class="circle">
+                              <div className="circle">
                                   <strong className="hours"></strong>
                                   <sup>hrs</sup>
                               </div>
-                              <div class="circle">
+                              <div className="circle">
                                   <strong className="minutes"></strong>
                                   <sup>mins</sup>
                               </div>
-                              <div class="circle">
+                              <div className="circle">
                                   <strong className="seconds"></strong>
                                   <sup>secs</sup>
                               </div>

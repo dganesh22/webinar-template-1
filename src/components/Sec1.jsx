@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import content from '../data/content.json'
 
 function Sec1() {
@@ -15,9 +16,9 @@ function Sec1() {
                     { content.hero['mainTitle-1'] } <span className="text-warning"> { content.hero['mainTitle-2']} </span>
                    </h1>
 
-                    {/* <div className="btn btn-outline-warning btn-lg">
-                       <span className="text-light">Play</span> <i className="bi bi-play-circle"></i>
-                    </div> */}
+                     <a  href={`#register`} className="btn btn-outline-warning btn-lg">
+                       <span className="text-light">Register</span> <i className="bi bi-person"></i>
+                    </a> 
                   </div>
                 </div>
             </div>

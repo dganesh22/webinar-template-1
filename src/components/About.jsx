@@ -68,25 +68,25 @@ counter()
                   </div>
 
                   <div className="row">
-                    <div className="col-md-12 text-center d-flex align-items-center justify-content-center">
+                    <div className="col-md-12 text-center d-flex align-items-center justify-content-center p-3">
                       <div className="offer mt-4 mb-2">
                                     <h5 className="text-primary display-6">
                                       Event Date
                                     </h5>
                                     <div id="demo" className="d-flex">
-                                        <div class="circle">
+                                        <div className="circle">
                                             <strong className="day"></strong>
                                             <sup>Days</sup>
                                         </div>
-                                        <div class="circle">
+                                        <div className="circle">
                                             <strong className="hour"></strong>
                                             <sup>hrs</sup>
                                         </div>
-                                        <div class="circle">
+                                        <div className="circle">
                                             <strong className="minute"></strong>
                                             <sup>mins</sup>
                                         </div>
-                                        <div class="circle">
+                                        <div className="circle">
                                             <strong className="second"></strong>
                                             <sup>secs</sup>
                                         </div>
