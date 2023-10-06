@@ -7,9 +7,14 @@ function Header() {
     <section>
             <nav className="navbar navbar-expand-md navbar-dark bg-custom fixed-top">
                 <div className="container">
-                    <Link to={`/#`} className="navbar-brand">
+                    <a href={`/`} className="navbar-brand">
                          <img src={content.header.logo} alt="" className='img-fluid' width={200} height={150} />
-                    </Link>
+                    </a>
+                    <ul className="navbar-nav">
+                      <li className="nav-item">
+                          <a href={`#register`} className="btn btn-warning btn-lg">Register <i className="bi bi-person-fill"></i> </a>
+                      </li>
+                    </ul>
                 </div>
             </nav>
     </section>
